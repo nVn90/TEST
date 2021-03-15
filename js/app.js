@@ -3,7 +3,7 @@
   const nav = document.querySelector('.nav-links');
   const navLinks = document.querySelectorAll('.nav-links li');
 
-  burger.addEventListener('click', () => {
+  burger.addEventListener('click', () => {  
     nav.classList.toggle('nav-active');
 
     //Animate Links
@@ -19,7 +19,9 @@
 
 var preLoader =  document.getElementById('loading');
 function preLoaderFuntion() {
-  preLoader.style.display='none';
+  setTimeout(() => {
+    preLoader.style.display='none';
+  }, 2000);
 }
 
 navSlide();
